@@ -1,4 +1,4 @@
-Import-Module C:\ProgramData\TMT\KnownFolderPathPS5.ps1
+Import-Module C:\ProgramData\TMT\KnownFolderPathPS5.ps1 -Force
 
 Set-KnownFolderPath Desktop "D:\$($ENV:USERPROFILE)\Desktop"
 Set-KnownFolderPath Documents "D:\$($ENV:USERPROFILE)\Documents"
