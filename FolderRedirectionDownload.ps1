@@ -22,7 +22,7 @@ Else {
 
 $templateFilePath = "C:\ProgramData\TMT\FolderRedirection\FolderRedirection.ps1"
 
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/medteamadmins/FolderRedirection/FolderRedirection.ps1" -OutFile "C:\ProgramData\TMT\FolderRedirection\FolderRedirection.ps1"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/medteamadmins/FolderRedirection/KnownFolderPathPS5.ps1" -OutFile "C:\ProgramData\TMT\FolderRedirection\KnownFolderPathPS5.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/medteamadmins/FolderRedirection/main/FolderRedirection.ps1" -OutFile "C:\ProgramData\TMT\FolderRedirection\FolderRedirection.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/medteamadmins/FolderRedirection/main/KnownFolderPathPS5.ps1" -OutFile "C:\ProgramData\TMT\FolderRedirection\KnownFolderPathPS5.ps1"
 
 invoke-expression -Command $templateFilePath
