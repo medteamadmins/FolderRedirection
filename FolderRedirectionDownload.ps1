@@ -6,8 +6,8 @@
     New-Item -Path "D:\$($env:USERNAME)\Downloads" -ItemType Directory -Force
     New-Item -Path "D:\$($env:USERNAME)\Documents" -ItemType Directory -Force
     New-Item -Path "D:\$($env:USERNAME)\Desktop" -ItemType Directory -Force
-    $OutlookshortcutPath = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "Office 365 Portal.lnk")
-    $TeamsshortcutPath = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "Office 365 Portal.lnk")
+    $OutlookshortcutPath = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "Outlook Web App.lnk")
+    $TeamsshortcutPath = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "Teams Web App.lnk")
     $Office365shortcutPath = [System.IO.Path]::Combine([System.Environment]::GetFolderPath("Desktop"), "Office 365 Portal.lnk")
     Copy-Item -Path $OutlookshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
     Copy-Item -Path $TeamsshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
