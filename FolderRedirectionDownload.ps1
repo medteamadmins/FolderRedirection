@@ -12,6 +12,9 @@
     Copy-Item -Path $OutlookshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
     Copy-Item -Path $TeamsshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
     Copy-Item -Path $Office365shortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
+    
+    $RemoteDesktopPath = "C:\Users\$($ENV:USERNAME)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Remote Desktop.lnk"
+    Copy-Item -Path $RemoteDesktopPath -Destination "D:\$($env:USERNAME)\Desktop"
     }
     
     $FolderRedirection = "C:\ProgramData\TMT\FolderRedirection"
