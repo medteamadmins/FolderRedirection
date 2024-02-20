@@ -12,9 +12,24 @@
     Copy-Item -Path $OutlookshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
     Copy-Item -Path $TeamsshortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
     Copy-Item -Path $Office365shortcutPath -Destination "D:\$($env:USERNAME)\Desktop"
-    
+
+    #Remote Desktop
     $RemoteDesktopPath = "C:\Users\$($ENV:USERNAME)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Remote Desktop.lnk"
     Copy-Item -Path $RemoteDesktopPath -Destination "D:\$($env:USERNAME)\Desktop"
+
+    #Word
+	$WordPath = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Word.lnk"
+	Copy-Item -Path $WordPath -Destination "D:\$($env:USERNAME)\Desktop"
+	
+	#Excel
+	$ExcelPath = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Excel.lnk"
+	Copy-Item -Path $ExcelPath -Destination "D:\$($env:USERNAME)\Desktop"
+	
+	#PowerPoint
+	$PowerPointPath = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PowerPoint.lnk"
+	Copy-Item -Path $PowerPointPath -Destination "D:\$($env:USERNAME)\Desktop"
+    
+    
     }
     
     $FolderRedirection = "C:\ProgramData\TMT\FolderRedirection"
